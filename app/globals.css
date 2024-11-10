@@ -1030,7 +1030,6 @@ color: #fff;
   height: 50vw;
   max-width: 1000px;
   max-height: 600px;
-  transition: filter 0.5s ease, box-shadow 0.5s ease;
   box-shadow: none;
   overflow: hidden;
   border-radius: 5px;
@@ -1073,6 +1072,11 @@ color: #fff;
   bottom: 0%;
   right: 0%;
   background: #000;
+}
+
+.work2::after {
+  background: #999999;
+  color: #000;
 }
 
 

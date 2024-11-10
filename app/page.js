@@ -129,26 +129,7 @@ export default function Home() {
     gsap.registerPlugin(ScrollTrigger);
 
 
-    const works = document.querySelectorAll(".work");
-
-    works.forEach((work, i) => {
-      ScrollTrigger.create({
-        trigger: work,
-        start: "top 50%",         // 요소의 상단이 뷰포트의 50%에 도달할 때
-        end: "bottom 20%",        // 요소의 하단이 뷰포트의 50%에 도달할 때
-        onEnter: () => work.classList.add('glow'),          // 아래로 스크롤 시 클래스 추가
-        onLeave: () => work.classList.remove('glow'),       // 아래로 스크롤 시 클래스 제거
-      });
     
-      // ScrollTrigger for upwards scrolling
-      ScrollTrigger.create({
-        trigger: work,
-        start: "top 70%",         // 요소의 상단이 뷰포트의 70%에 도달할 때
-        end: "bottom 50%",        // 요소의 하단이 뷰포트의 50%에 도달할 때
-        onLeaveBack: () => work.classList.remove('glow'),    // 위로 스크롤 시 클래스 제거
-        onEnterBack: () => work.classList.add('glow'),       // 다시 들어올 때 클래스 추가
-      });
-    });
     const animateText = document.querySelectorAll(".animate-text");
     const animateTitle = document.querySelectorAll(".animate-title");
 
