@@ -85,6 +85,8 @@ export default function Home() {
   }
 
   useEffect(() => {
+    
+      if(window.innerWidth <= 768)
     document.querySelector('.header-slogan').innerHTML = 'jr.Dev.Hyunsun'
 
     setAboutTop(document.querySelector('.sec2').getBoundingClientRect().top + window.scrollY)
