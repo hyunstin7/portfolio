@@ -124,90 +124,90 @@ export default function Home() {
 
 
 
-    // gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger);
 
 
-    // const works = document.querySelectorAll(".work");
+    const works = document.querySelectorAll(".work");
 
-    // works.forEach((work, i) => {
-    //   ScrollTrigger.create({
-    //     trigger: work,
-    //     start: "top 50%",         // 요소의 상단이 뷰포트의 50%에 도달할 때
-    //     end: "bottom 20%",        // 요소의 하단이 뷰포트의 50%에 도달할 때
-    //     onEnter: () => work.classList.add('glow'),          // 아래로 스크롤 시 클래스 추가
-    //     onLeave: () => work.classList.remove('glow'),       // 아래로 스크롤 시 클래스 제거
-    //   });
+    works.forEach((work, i) => {
+      ScrollTrigger.create({
+        trigger: work,
+        start: "top 50%",         // 요소의 상단이 뷰포트의 50%에 도달할 때
+        end: "bottom 20%",        // 요소의 하단이 뷰포트의 50%에 도달할 때
+        onEnter: () => work.classList.add('glow'),          // 아래로 스크롤 시 클래스 추가
+        onLeave: () => work.classList.remove('glow'),       // 아래로 스크롤 시 클래스 제거
+      });
     
-    //   // ScrollTrigger for upwards scrolling
-    //   ScrollTrigger.create({
-    //     trigger: work,
-    //     start: "top 70%",         // 요소의 상단이 뷰포트의 70%에 도달할 때
-    //     end: "bottom 50%",        // 요소의 하단이 뷰포트의 50%에 도달할 때
-    //     onLeaveBack: () => work.classList.remove('glow'),    // 위로 스크롤 시 클래스 제거
-    //     onEnterBack: () => work.classList.add('glow'),       // 다시 들어올 때 클래스 추가
-    //   });
-    // });
-    // const animateText = document.querySelectorAll(".animate-text");
-    // const animateTitle = document.querySelectorAll(".animate-title");
+      // ScrollTrigger for upwards scrolling
+      ScrollTrigger.create({
+        trigger: work,
+        start: "top 70%",         // 요소의 상단이 뷰포트의 70%에 도달할 때
+        end: "bottom 50%",        // 요소의 하단이 뷰포트의 50%에 도달할 때
+        onLeaveBack: () => work.classList.remove('glow'),    // 위로 스크롤 시 클래스 제거
+        onEnterBack: () => work.classList.add('glow'),       // 다시 들어올 때 클래스 추가
+      });
+    });
+    const animateText = document.querySelectorAll(".animate-text");
+    const animateTitle = document.querySelectorAll(".animate-title");
 
-    // animateText.forEach((p) => {
-    //   const splitText = p.innerHTML.split("").map(char =>
-    //     char === " " ? "&nbsp;" : `<span class="char">${char}</span>`
-    //   ).join("");
-    //   p.innerHTML = splitText;
-    // });
-
-
-    // animateText.forEach((p, i) => {
-    //   const chars = p.querySelectorAll(".char");
+    animateText.forEach((p) => {
+      const splitText = p.innerHTML.split("").map(char =>
+        char === " " ? "&nbsp;" : `<span class="char">${char}</span>`
+      ).join("");
+      p.innerHTML = splitText;
+    });
 
 
-    //   gsap.fromTo(chars,
-    //     {
-    //       opacity: 0,
-    //       rotateX: 90,
-    //       y: 15
-    //     },
-    //     {
-    //       opacity: 1,
-    //       rotateX: 0,
-    //       y: 0,
-    //       duration: 1,
-    //       ease: "power2.out",
-    //       stagger: 0.05,
-    //       scrollTrigger: {
-    //         trigger: p,
-    //         start: "top 90%",
-    //         end: "top 50%",
-    //         scrub: 2,
-    //       }
-    //     });
-    // });
+    animateText.forEach((p, i) => {
+      const chars = p.querySelectorAll(".char");
+
+
+      gsap.fromTo(chars,
+        {
+          opacity: 0,
+          rotateX: 90,
+          y: 15
+        },
+        {
+          opacity: 1,
+          rotateX: 0,
+          y: 0,
+          duration: 1,
+          ease: "power2.out",
+          stagger: 0.05,
+          scrollTrigger: {
+            trigger: p,
+            start: "top 90%",
+            end: "top 50%",
+            scrub: 2,
+          }
+        });
+    });
     
 
-    // animateTitle.forEach((h4, i) => {
+    animateTitle.forEach((h4, i) => {
 
 
-    //   gsap.fromTo(h4,
-    //     {
-    //       opacity: 0,
-    //       skewX: -50,
-    //       x: 100
-    //     },
-    //     {
-    //       opacity: 1,
-    //       skewX: 0,
-    //       x: 0,
-    //       duration: 2,
-    //       ease: "power2.out",
-    //       scrollTrigger: {
-    //         trigger: h4,
-    //         start: "top 90%",
-    //         end: "top 80%",
-    //         scrub: true,
-    //       }
-    //     });
-    // });
+      gsap.fromTo(h4,
+        {
+          opacity: 0,
+          skewX: -50,
+          x: 100
+        },
+        {
+          opacity: 1,
+          skewX: 0,
+          x: 0,
+          duration: 2,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: h4,
+            start: "top 90%",
+            end: "top 80%",
+            scrub: true,
+          }
+        });
+    });
     document.querySelectorAll('.i8-list').forEach((a, i) => {
       a.addEventListener('click', function () {
         document.querySelectorAll('.i8-list').forEach((b, i) => {
