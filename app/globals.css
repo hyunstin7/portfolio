@@ -1072,6 +1072,7 @@ color: #fff;
   bottom: 0%;
   right: 0%;
   background: #000;
+  border-radius: 5px 0 0 0;
 }
 
 .work2::after {
