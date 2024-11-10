@@ -9,6 +9,8 @@
   unicode-range: U+AC00-D7AF;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 
 
 *{
@@ -79,12 +81,14 @@ section {
   animation: intro-txt .5s linear forwards;
   color: #fff;
   font-size: 13vw; 
-  letter-spacing: -10px; 
+  letter-spacing: -3px; 
   width: max-content; 
   position: absolute; 
   top: 500px; 
   left: 50%; 
   transform: translate3d(-50%,0,0);
+  font-family: "Playfair Display", serif;
+
 }
 
 .mo-br {
@@ -249,6 +253,8 @@ section {
   font-size: 13vw;
   letter-spacing: -0.66rem;
   transform: translate3d(0, 100%, 0);
+  font-family: "Playfair Display", serif;
+
 }
 
 
@@ -313,6 +319,7 @@ section {
   font-size: 13vw; 
   letter-spacing: -0.66rem; 
   margin-bottom: 50px;
+  font-family: "Playfair Display", serif;
 }
 
 .about-container {
