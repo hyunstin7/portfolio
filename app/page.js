@@ -714,7 +714,7 @@ export default function Home() {
             </div>
           </div>
           <div className="work-box">
-            <a href="https://hyunstin7.github.io/adcommunicationTest/" target="_blank"><div className="work work4"></div></a>
+            <a href="https://hyunstin7.github.io/AD-Communication/" target="_blank"><div className="work work4"></div></a>
             <div className="s4-demon">
             <div className="s4-demon-top">
                 <div className="s4-demon-top-left">
