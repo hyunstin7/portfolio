@@ -680,7 +680,7 @@ export default function Home() {
             </div>
           </div>
           <div className="work-box">
-            <a href="https://hyunstin7.github.io/jinwer/" target="_blank"><div className="work work2"></div></a>
+            <a href="https://xn----b08em0i9pas9d9vkr7q4qf0s0a.kr/" target="_blank"><div className="work work2"></div></a>
             <div className="s4-demon">
             <div className="s4-demon-top">
                 <div className="s4-demon-top-left">
@@ -697,7 +697,7 @@ export default function Home() {
             </div>
           </div>
           <div className="work-box">
-            <a href="https://hyunstin7.github.io/wittiy/" target="_blank"><div className="work work3"></div></a>
+            <a href="http://witty-data.com/" target="_blank"><div className="work work3"></div></a>
             <div className="s4-demon">
             <div className="s4-demon-top">
                 <div className="s4-demon-top-left">
@@ -714,7 +714,7 @@ export default function Home() {
             </div>
           </div>
           <div className="work-box">
-            <a href="https://hyunstin7.github.io/AD-Communication/" target="_blank"><div className="work work4"></div></a>
+            <a href="https://xn--299aqdt15f.kr/" target="_blank"><div className="work work4"></div></a>
             <div className="s4-demon">
             <div className="s4-demon-top">
                 <div className="s4-demon-top-left">
