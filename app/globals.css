@@ -84,7 +84,7 @@ section {
   letter-spacing: -3px; 
   width: max-content; 
   position: absolute; 
-  top: 500px; 
+  bottom: 20%; 
   left: 50%; 
   transform: translate3d(-50%,0,0);
   font-family: "Playfair Display", serif;
